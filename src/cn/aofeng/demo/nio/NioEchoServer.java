@@ -227,6 +227,9 @@ public class NioEchoServer {
         ServerSocketChannel server = (ServerSocketChannel) selectionKey.channel();
         SocketChannel socketChannel = server.accept();
         if (null != socketChannel) {
+            if (logger.isLoggable(Level.INFO)) {
+                logger.info("收到一个新的连接，客户端IP："+socketChannel.socket().getInetAddress().getHostAddress()+"，客户端Port："+socketChannel.socket().getPort());
+            }
             socketChannel.configureBlocking(false);
             socketChannel.register(selector, SelectionKey.OP_READ);
         }
@@ -247,6 +250,9 @@ public class NioEchoServer {
             serverChannel.configureBlocking(false);
             ServerSocket serverSocket = serverChannel.socket();
             serverSocket.bind(new InetSocketAddress(port));
+            if (logger.isLoggable(Level.INFO)) {
+                logger.info("NIO echo网络服务启动完毕，监听端口：" +port);
+            }
             
             Selector selector = Selector.open();
             serverChannel.register(selector, SelectionKey.OP_ACCEPT);
