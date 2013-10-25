@@ -195,7 +195,7 @@ public class NioEchoServer {
                 socketChannel.close();
             }
             
-            // 行结束符后面是否还有数据？
+            // FIXME 行结束符后面是否还有数据？ 此部分代码尚未测试
             if (lineRemain.limit()+2 < newBuffer.limit()) {
                 byte[] temp = new byte[newBuffer.limit() - lineRemain.limit()];
                 newBuffer.get(temp, lineRemain.limit(), temp.length);
