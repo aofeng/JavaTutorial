@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 /**
  * IO-内存映射。
  * 
- * @author NieYong <aofengblog@163.com>
+ * @author 聂勇 <a href="mailto:aofengblog@163.com">aofengblog@163.com</a>
  */
 public class MemoryMapper {
 

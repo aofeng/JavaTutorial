@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 
 /**
  * 用NIO实现的Echo Server。
- * @author NieYong <aofengblog@163.com>
+ * @author 聂勇 <a href="mailto:aofengblog@163.com">aofengblog@163.com</a>
  */
 public class NioEchoServer {
     

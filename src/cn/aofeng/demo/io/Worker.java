@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 /**
  * 处理客户端Socket连接的工作线程。
  * 
- * @author NieYong <aofengblog@163.com>
+ * @author 聂勇 <a href="mailto:aofengblog@163.com">aofengblog@163.com</a>
  */
 public class Worker implements Runnable {
 
