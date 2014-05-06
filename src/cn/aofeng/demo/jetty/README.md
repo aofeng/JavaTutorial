@@ -6,7 +6,12 @@
 这样问题就来了：该如何模拟外部系统返回各种正常和异常的响应内容呢？
 办法总是有的，这里就用Jetty实现Http Server Mock，模拟服务端返回各种响应数据。
 
-实现业务请求的示例代码
+预备
+---
+* [JUnit 4.11](http://junit.org/)
+* [Jetty 7.6.9](http://www.eclipse.org/jetty/)
+
+业务示例代码
 ---
 [源码下载](https://raw.githubusercontent.com/aofeng/JavaDemo/master/src/cn/aofeng/demo/jetty/HttpGet.java)
 ```java
