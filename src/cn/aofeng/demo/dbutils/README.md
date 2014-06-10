@@ -219,7 +219,7 @@ Student [userId=5, userName=小丽, gender=F, age=9]
 
 附录
 ---
-[DEMO完整源代码](https://github.com/aofeng/JavaDemo/edit/master/src/cn/aofeng/demo/dbutils)
+* [DEMO完整源代码](https://github.com/aofeng/JavaDemo/edit/master/src/cn/aofeng/demo/dbutils)
 
 参考资料
 ---
