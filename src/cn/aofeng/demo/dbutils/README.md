@@ -217,6 +217,10 @@ Student [userId=4, userName=小明, gender=M, age=6]
 Student [userId=5, userName=小丽, gender=F, age=9]
 ```
 
+附录
+---
+[DEMO完整源代码](https://github.com/aofeng/JavaDemo/edit/master/src/cn/aofeng/demo/dbutils)
+
 参考资料
 ---
 * [commons-dbutils example](http://commons.apache.org/proper/commons-dbutils/examples.html)
