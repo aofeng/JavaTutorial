@@ -16,6 +16,9 @@
 * [Future](src/cn/aofeng/demo/java/util/future/HelloFuture.java)
 * [Future接口关系图](src/cn/aofeng/demo/java/util/future/Future.ucls)
 
+##定时器
+* [Timer](src/cn/aofeng/demo/java/util/timer/TimerDemo.java)
+
 ##设计模式
 * [事件驱动](src/cn/aofeng/demo/eventdriver_normal)
 * [事件驱动改进版](src/cn/aofeng/demo/eventdriver_improve)
