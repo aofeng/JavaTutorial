@@ -18,6 +18,7 @@
 
 ##定时器
 * [Timer](src/cn/aofeng/demo/java/util/timer/TimerDemo.java)
+* [ScheduledExecutorService](src/cn/aofeng/demo/java/util/concurret/ScheduledExecutorServiceDemo.java)
 
 ##设计模式
 * [事件驱动](src/cn/aofeng/demo/eventdriver_normal)
