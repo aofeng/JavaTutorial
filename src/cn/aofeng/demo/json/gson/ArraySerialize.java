@@ -3,7 +3,7 @@ package cn.aofeng.demo.json.gson;
 import com.google.gson.Gson;
 
 /**
- * 数组的序列化与反序列化。
+ * 数组的序列化。
  * 
  * @author <a href="mailto:aofengblog@163.com">聂勇</a>
  */
