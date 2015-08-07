@@ -37,6 +37,7 @@
 * [数组-序列化](src/cn/aofeng/demo/json/gson/ArraySerialize.java)
 * [数组-反序列化](src/cn/aofeng/demo/json/gson/ArrayDeserialize.java)
 * [集合-序列化](src/cn/aofeng/demo/json/gson/CollectionsSerialize.java)
+* [集合-反序列化](src/cn/aofeng/demo/json/gson/CollectionDeserialize.java)
 
 ## 脚本语言
 * [在Java中执行JavaScript脚本](src/cn/aofeng/demo/script/ScriptRunPerformence.java)
