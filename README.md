@@ -20,7 +20,8 @@
 
 #Java中级
 ##反射
-* [获取方法、字段和注解](src/cn/aofeng/demo/java/lang/reflect/ClassAnalyze.java)
+* [获取构造方法、普通方法、字段和注解](src/cn/aofeng/demo/java/lang/reflect/ClassAnalyze.java)
+* [使用构造方法创建对象实例](src/cn/aofeng/demo/java/lang/reflect/CreateInstance.java)
 
 ##序列化与反序列化
 ###Json
