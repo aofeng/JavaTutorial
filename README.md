@@ -22,6 +22,7 @@
 ##反射
 * [获取构造方法、普通方法、字段和注解](src/cn/aofeng/demo/java/lang/reflect/ClassAnalyze.java)
 * [使用构造方法创建对象实例](src/cn/aofeng/demo/java/lang/reflect/CreateInstance.java)
+* [调用方法](src/cn/aofeng/demo/java/lang/reflect/InvokeMethod.java)
 
 ##序列化与反序列化
 ###Json
