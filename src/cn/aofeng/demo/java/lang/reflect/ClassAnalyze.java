@@ -4,6 +4,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.AnnotatedElement;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.lang.reflect.Member;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
@@ -35,9 +36,7 @@ public class ClassAnalyze {
         
         // 构造方法
         StringBuilder buffer = new StringBuilder(32)
-            .append( Modifier.toString(c.getModifiers()) )
-            .append(' ')
-            .append(c.getName())
+            .append( parseMember(c) )
             .append('(');
         
         // 参数
@@ -59,9 +58,7 @@ public class ClassAnalyze {
         
         // 方法
         StringBuilder buffer = new StringBuilder(32)
-            .append( Modifier.toString(method.getModifiers()) )
-            .append(' ')
-            .append(method.getName())
+            .append( parseMember(method) )
             .append('(');
         
         // 参数
@@ -82,11 +79,21 @@ public class ClassAnalyze {
         parseAnnotation(field);
         
         // 字段
-        StringBuilder buffer = new StringBuilder()
-            .append(Modifier.toString(field.getModifiers()))
-            .append(' ')
-            .append(field.getName());
+        StringBuilder buffer = parseMember(field);
         log(buffer.toString());
+    }
+    
+    /**
+     * 解析方法、字段或构造方法的信息。
+     * @param member 方法、字段或构造方法
+     * @return 修饰符和名称组成的字符串。
+     */
+    private static StringBuilder parseMember(Member member) {
+        StringBuilder buffer = new StringBuilder()
+            .append(Modifier.toString(member.getModifiers()))
+            .append(' ')
+            .append(member.getName());
+        return buffer;
     }
     
     /**
