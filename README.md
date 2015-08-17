@@ -38,6 +38,8 @@
 
 #####文章
 * [Gson教程-序列化与反序列化基础操作](http://aofengblog.blog.163.com/blog/static/6317021201571275718825/)
+* [Gson教程-自定义序列化](http://aofengblog.blog.163.com/blog/static/631702120157148122062/)
+* [Gson教程-自定义反序列化](http://aofengblog.blog.163.com/blog/static/631702120157178202587/)
 
 ##定时器
 ###代码
