@@ -13,6 +13,8 @@ public class Man extends Person {
     private boolean marry;
     
     private int power;
+    
+    public int height;
 
     public Man() {
         super();
