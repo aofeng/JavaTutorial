@@ -103,6 +103,8 @@
 ###文章
 * [在JVM中编译脚本提升运行性能](http://aofengblog.blog.163.com/blog/static/6317021201311143045607/)
 
+##加密解密
+* [Blowfish与AES性能对比](src/cn/aofeng/demo/encrypt/EncryptAndDecrypt.java)
 
 #Java企业开发
 ##开源框架
