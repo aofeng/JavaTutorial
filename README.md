@@ -59,6 +59,8 @@
 * [使用Jetty实现Http Server Mock作单元测试](src/cn/aofeng/demo/jetty)
 * [使用WireMock实现Http Server Mock作单元测试](src/cn/aofeng/demo/wiremock)
 
+##其他
+* [获取主机信息](src/cn/aofeng/demo/misc/GetHostInfo.java)
 
 #Java高级
 ##网络与I/O
@@ -68,6 +70,9 @@
 * [NIO 缓冲区](src/cn/aofeng/demo/nio/BufferIO.java)
 * [NIO 内存映射](src/cn/aofeng/demo/nio/MemoryMapper.java)
 * [NioEchoServer](src/cn/aofeng/demo/nio/NioEchoServer.java)
+* [netty4.x-DiscardServer]()
+* [netty4.x-DiscardServer]()
+* [netty4.x-DiscardServer]()
 
 ###文章
 * [NIO - 入门篇（笔记）](http://aofengblog.blog.163.com/blog/static/6317021200892145321884/)
