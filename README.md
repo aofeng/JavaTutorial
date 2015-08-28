@@ -106,7 +106,7 @@
 ##加密解密
 * [加密解密基础类](src/cn/aofeng/demo/encrypt/EncryptAndDecrypt.java)
 * [Blowfish加密与解密](src/cn/aofeng/demo/encrypt/Blowfish.java)
-
+* [AES加密与解密](src/cn/aofeng/demo/encrypt/AES.java)
 
 #Java企业开发
 ##开源框架
