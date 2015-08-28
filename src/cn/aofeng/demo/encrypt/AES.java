@@ -21,14 +21,15 @@ import org.apache.commons.codec.binary.Base64;
  */
 public class AES extends EncryptAndDecrypt {
 
-    private String encryptType = "AES/CBC/PKCS5Padding";
-    private String algorithmParam = "abcdefgh12345678";
+    public final String encryptType = "AES/CBC/PKCS5Padding";
+    public final String algorithmParam = "abcdefgh12345678";
+    public final String key = "abcdefgh_1234567";
 
-    private void execute(String data) throws InvalidKeyException,
+    public void execute(String data) throws InvalidKeyException,
             IllegalBlockSizeException, BadPaddingException,
             UnsupportedEncodingException, NoSuchAlgorithmException,
             NoSuchPaddingException, InvalidAlgorithmParameterException {
-        SecretKey secretKey = createSecretKey("AES", "abcdefgh_1234567");
+        SecretKey secretKey = createSecretKey("AES", key);
         byte[] secretData = encrypt(encryptType, secretKey, data,
                 algorithmParam);
         log("使用%s加密后的数据：", encryptType);
