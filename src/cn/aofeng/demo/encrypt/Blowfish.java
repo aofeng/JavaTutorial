@@ -21,6 +21,21 @@ import org.apache.commons.codec.binary.Base64;
  */
 public class Blowfish extends EncryptAndDecrypt {
 
+    private String encryptType = "Blowfish";
+
+    private void execute(String data) throws InvalidKeyException,
+            IllegalBlockSizeException, BadPaddingException,
+            UnsupportedEncodingException, NoSuchAlgorithmException,
+            NoSuchPaddingException, InvalidAlgorithmParameterException {
+        SecretKey secretKey = createSecretKey(encryptType, "abcdefgh_1234567");
+        byte[] secretData = encrypt(encryptType, secretKey, data);
+        log("使用%s加密后的数据：", encryptType);
+        log(Base64.encodeBase64String(secretData));
+
+        String srcStr = decrypt(encryptType, secretKey, secretData);
+        log("解密后的数据：\n%s", srcStr);
+    }
+
     public static void main(String[] args) throws UnsupportedEncodingException,
             InvalidKeyException, IllegalBlockSizeException,
             BadPaddingException, NoSuchAlgorithmException,
@@ -29,15 +44,7 @@ public class Blowfish extends EncryptAndDecrypt {
         log("待加密的数据：\n%s", data);
 
         Blowfish bf = new Blowfish();
-        String encryptType = "Blowfish";
-        SecretKey secretKey = bf.createSecretKey(encryptType,
-                "abcdefgh_1234567");
-        byte[] secretData = bf.encrypt(encryptType, secretKey, data);
-        log("使用%s加密后的数据：", encryptType);
-        log(Base64.encodeBase64String(secretData));
-
-        String srcStr = bf.decrypt(encryptType, secretKey, secretData);
-        log("解密后的数据：\n%s", srcStr);
+        bf.execute(data);
     }
 
 }
