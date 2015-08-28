@@ -104,9 +104,9 @@
 * [在JVM中编译脚本提升运行性能](http://aofengblog.blog.163.com/blog/static/6317021201311143045607/)
 
 ##加密解密
-* [加密解密基础类](src/cn/aofeng/demo/encrypt/EncryptAndDecrypt.java)
 * [Blowfish加密与解密](src/cn/aofeng/demo/encrypt/Blowfish.java)
 * [AES加密与解密](src/cn/aofeng/demo/encrypt/AES.java)
+* [Blowfish, AES性能比较](src/cn/aofeng/demo/encrypt/PerformanceCompare.java)
 
 #Java企业开发
 ##开源框架
