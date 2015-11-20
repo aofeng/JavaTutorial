@@ -115,6 +115,9 @@
 * [Spring IBatis Struts2 集成之一：Spring与IBatis集成 | Spring IBatis Struts2 Integration I: Spring Integrates with IBatis](http://aofengblog.blog.163.com/blog/static/6317021201121911105510/)
 * [Spring IBatis Struts2 集成之二：Spring与Struts2集成 | Spring IBatis Struts2 Integration II: Spring Integrates with Struts2](http://aofengblog.blog.163.com/blog/static/6317021201122172525296/)
 
+##XML
+* [XPath](src/cn/aofeng/demo/xml/XPathDemo.java)
+
 ## EJB
 * [EJB3 - 使用Eclipse和JBoss开发和部署Session Bean | How to create Session Bean using JBoss and Eclipse](http://aofengblog.blog.163.com/blog/static/6317021201121310318552/)
 * [EJB3 - 使用Eclipse和JBoss开发和部署Entity Bean | How to create Entity Bean using JBoss and Eclipse](http://aofengblog.blog.163.com/blog/static/631702120112147279187/)
