@@ -15,6 +15,7 @@ do
 done
 APP_CLASSPATH=$APP_CLASSPATH:$APP_HOME/classes
 
-PARAMS=$1' '$2
+PARAMS=$*
 EXEC='java -Djava.util.logging.config.file='$APP_HOME'/classes/logging.properties -Dfile.encoding=UTF-8 -classpath '$APP_CLASSPATH' '$PARAMS
+echo $EXEC
 exec $EXEC
