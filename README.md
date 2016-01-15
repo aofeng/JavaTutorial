@@ -9,17 +9,19 @@
 
 #Java基础
 ##数据结构
-* [Map接口及其实现类的关系图](src/cn/aofeng/demo/java/util/map/Map接口及其实现类.ucls)
 
 ##数据库
+###代码
 * [Apache DbUtils - JDBC Utility Component](src/cn/aofeng/demo/dbutils)
 
 ##Redis
+###代码
 * [Redis客户端Jedis使用示例](src/cn/aofeng/demo/redis/JedisDemo.java)
 
 
 #Java中级
 ##反射
+###代码
 * [获取构造方法、普通方法、字段和注解](src/cn/aofeng/demo/java/lang/reflect/ClassAnalyze.java)
 * [使用构造方法创建对象实例](src/cn/aofeng/demo/java/lang/reflect/CreateInstance.java)
 * [调用方法](src/cn/aofeng/demo/java/lang/reflect/InvokeMethod.java)
@@ -48,6 +50,7 @@
 * [ScheduledExecutorService](src/cn/aofeng/demo/java/util/concurret/ScheduledExecutorServiceDemo.java)
 
 ##设计模式
+###代码
 * [事件驱动](src/cn/aofeng/demo/eventdriver_normal)
 * [事件驱动改进版](src/cn/aofeng/demo/eventdriver_improve)
 * [Reactor](src/cn/aofeng/demo/reactor)
@@ -60,6 +63,7 @@
 * [使用WireMock实现Http Server Mock作单元测试](src/cn/aofeng/demo/wiremock)
 
 ##其他
+###代码
 * [获取主机信息](src/cn/aofeng/demo/misc/GetHostInfo.java)
 
 #Java高级
@@ -70,9 +74,10 @@
 * [NIO 缓冲区](src/cn/aofeng/demo/nio/BufferIO.java)
 * [NIO 内存映射](src/cn/aofeng/demo/nio/MemoryMapper.java)
 * [NioEchoServer](src/cn/aofeng/demo/nio/NioEchoServer.java)
-* [netty4.x-DiscardServer]()
-* [netty4.x-DiscardServer]()
-* [netty4.x-DiscardServer]()
+
+####Netty 4.0.x
+* [EchoServer](src/cn/aofeng/demo/netty40x/echo/EchoServer.java)
+* [EchoClient](src/cn/aofeng/demo/netty40x/echo/EchoClient.java)
 
 ###文章
 * [NIO - 入门篇（笔记）](http://aofengblog.blog.163.com/blog/static/6317021200892145321884/)
@@ -92,8 +97,6 @@
 * [Servlet的线程安全问题](http://aofengblog.blog.163.com/blog/static/631702120081016102531434/)
 * [多线程池执行异步任务](http://aofengblog.blog.163.com/blog/static/6317021201423193434810/)
 * [事件驱动的异步化框架:event4j](http://aofengblog.blog.163.com/blog/static/63170212014102463624267/)
-
-##源码分析
 * [JDK HashMap源码分析 | HashMap Source Code Analysis](http://aofengblog.blog.163.com/blog/static/631702120147148919858/)
 
 ## 脚本语言
@@ -104,35 +107,42 @@
 * [在JVM中编译脚本提升运行性能](http://aofengblog.blog.163.com/blog/static/6317021201311143045607/)
 
 ##加密解密
+###代码
 * [Blowfish加密与解密](src/cn/aofeng/demo/encrypt/Blowfish.java)
 * [AES加密与解密](src/cn/aofeng/demo/encrypt/AES.java)
 * [Blowfish, AES性能比较](src/cn/aofeng/demo/encrypt/PerformanceCompare.java)
 
 #Java企业开发
 ##开源框架
+###文章
 * [Struts2 - 支持JSON / Using json in struts2](http://aofengblog.blog.163.com/blog/static/6317021201072311443715/)
 * [Struts2 - Unable to load configuration. - bean 错误解决](http://aofengblog.blog.163.com/blog/static/631702120103184042768/)
 * [Spring IBatis Struts2 集成之一：Spring与IBatis集成 | Spring IBatis Struts2 Integration I: Spring Integrates with IBatis](http://aofengblog.blog.163.com/blog/static/6317021201121911105510/)
 * [Spring IBatis Struts2 集成之二：Spring与Struts2集成 | Spring IBatis Struts2 Integration II: Spring Integrates with Struts2](http://aofengblog.blog.163.com/blog/static/6317021201122172525296/)
 
 ##XML
+###代码
 * [XPath](src/cn/aofeng/demo/xml/XPathDemo.java)
 
 ## EJB
+###文章
 * [EJB3 - 使用Eclipse和JBoss开发和部署Session Bean | How to create Session Bean using JBoss and Eclipse](http://aofengblog.blog.163.com/blog/static/6317021201121310318552/)
 * [EJB3 - 使用Eclipse和JBoss开发和部署Entity Bean | How to create Entity Bean using JBoss and Eclipse](http://aofengblog.blog.163.com/blog/static/631702120112147279187/)
 
 ##Tomcat
+###文章
 * [JMX管理Tomcat/Resin](http://aofengblog.blog.163.com/blog/static/6317021200871711013857/)
 
 ##Jetty
 * []()
 
 ##JBoss
+###文章
 * [JBoss5.1.0 GA - 部署项目类库兼容和类库冲突问题解决方法](http://aofengblog.blog.163.com/blog/static/631702120113674626533/)
 
 
 #Java工具
+##文章
 * [在Linux上安装JDK](http://aofengblog.blog.163.com/blog/static/6317021200810172817818/)
 * [在Linux上安装Ant](http://aofengblog.blog.163.com/blog/static/631702120081017113327582/)
 * [Java程序以后台方式在Linux上运行](http://aofengblog.blog.163.com/blog/static/631702120081014104934762/)
