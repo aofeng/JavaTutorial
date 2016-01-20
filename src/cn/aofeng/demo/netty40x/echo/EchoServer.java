@@ -46,7 +46,7 @@ public class EchoServer {
      */
     public static void main(String[] args) {
         if (args.length != 1) {
-            _logger.error("Invalid arguments。Usage：/njava cn.aofeng.demo.netty40x.echo.EchoServer 8080");
+            _logger.error("Invalid arguments。Usage：java cn.aofeng.demo.netty40x.echo.EchoServer 8080");
             System.exit(-1);
         }
         
