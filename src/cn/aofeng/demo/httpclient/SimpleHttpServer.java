@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.net.URI;
+import java.net.URLDecoder;
 import java.util.List;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -29,6 +30,8 @@ public class SimpleHttpServer {
 
     private static Logger _logger = Logger.getLogger(SimpleHttpServer.class);
     
+    private static String _charset = "utf-8";
+    
     static class MyHandler implements HttpHandler {
         
         @Override
@@ -49,13 +52,16 @@ public class SimpleHttpServer {
                 _logger.info(header.getKey()+":"+header.getValue());
             }
             
+            // 获取请求内容
             InputStream ins = httpEx.getRequestBody();
-            String content = IOUtils.toString(ins, "utf-8");
+            String content = URLDecoder.decode(
+                    IOUtils.toString(ins, _charset), _charset);
             _logger.info("请求内容:"+content);
             IOUtils.closeQuietly(ins);
             
-            String rc = "Hello, 汉字";
-            byte[] temp = rc.getBytes("utf-8");
+            // 返回响应
+            String rc = "冒号后面是收到的请求，原样返回:"+content;
+            byte[] temp = rc.getBytes(_charset);
             httpEx.sendResponseHeaders(200, temp.length);
             OutputStream outs = httpEx.getResponseBody();
             outs.write(temp);
