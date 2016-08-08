@@ -62,6 +62,8 @@ public class SimpleHttpServer {
             // 返回响应
             String rc = "冒号后面是收到的请求，原样返回:"+content;
             byte[] temp = rc.getBytes(_charset);
+            Headers outHeaders = httpEx.getResponseHeaders();
+            outHeaders.set("ABC", "123");
             httpEx.sendResponseHeaders(200, temp.length);
             OutputStream outs = httpEx.getResponseBody();
             outs.write(temp);
