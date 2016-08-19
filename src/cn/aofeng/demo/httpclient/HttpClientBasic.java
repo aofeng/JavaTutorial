@@ -3,18 +3,26 @@
  */
 package cn.aofeng.demo.httpclient;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
+import org.apache.http.NameValuePair;
 import org.apache.http.StatusLine;
 import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.ContentType;
+import org.apache.http.entity.FileEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
+import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 
@@ -37,7 +45,31 @@ public class HttpClientBasic {
         CloseableHttpResponse response = client.execute(get);
         processResponse(response);
     }
-
+    
+    public void post() throws ClientProtocolException, IOException {
+        List<NameValuePair> params = new ArrayList<NameValuePair>();
+        params.add(new BasicNameValuePair("chinese", "中文"));
+        params.add(new BasicNameValuePair("english", "英文"));
+        UrlEncodedFormEntity entity = new UrlEncodedFormEntity(params, _charset);
+        
+        CloseableHttpClient client = HttpClients.createDefault();
+        HttpPost post = new HttpPost(_targetHost+"/post");
+        post.addHeader("Cookie", "character=abcdefghijklmnopqrstuvwxyz; sign=abc-123-jkl-098");
+        post.setEntity(entity);
+        CloseableHttpResponse response = client.execute(post);
+        processResponse(response);
+    }
+    
+    public void sendFile(String filePath) throws UnsupportedOperationException, IOException {
+        CloseableHttpClient client = HttpClients.createDefault();
+        HttpPost post = new HttpPost(_targetHost+"/file");
+        File file = new File(filePath);
+        FileEntity entity = new FileEntity(file, ContentType.create(ContentType.TEXT_PLAIN.getMimeType(), _charset));
+        post.setEntity(entity);
+        CloseableHttpResponse response = client.execute(post);
+        processResponse(response);
+    }
+    
     private void processResponse(CloseableHttpResponse response) 
             throws UnsupportedOperationException, IOException {
         try {
@@ -65,21 +97,14 @@ public class HttpClientBasic {
         }
     }
     
-    public void post() throws ClientProtocolException, IOException {
-        CloseableHttpClient client = HttpClients.createDefault();
-        HttpPost post = new HttpPost(_targetHost+"/post");
-        post.addHeader("Cookie", "character=abcdefghijklmnopqrstuvwxyz; sign=abc-123-jkl-098");
-        CloseableHttpResponse response = client.execute(post);
-        processResponse(response);
-    }
-    
     /**
      * @param args
      */
     public static void main(String[] args) throws Exception {
         HttpClientBasic basic = new HttpClientBasic();
-        basic.get();
-        basic.post();
+//        basic.get();
+//        basic.post();
+        basic.sendFile("/devdata/projects/open_source/mine/JavaTutorial/LICENSE");
     }
 
 }

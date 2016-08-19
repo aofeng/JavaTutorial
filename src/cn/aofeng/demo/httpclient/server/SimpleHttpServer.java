@@ -30,6 +30,7 @@ public class SimpleHttpServer {
             HttpServer server = HttpServer.create(new InetSocketAddress(port), 128);
             server.createContext("/get", new CharacterHandler(_charset));
             server.createContext("/post", new CharacterHandler(_charset));
+            server.createContext("/file", new BinaryHandler(_charset));
             server.start();
             _logger.info("http server already started, listen port:"+port);
         } catch (IOException e) {

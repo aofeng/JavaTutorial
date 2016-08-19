@@ -15,6 +15,8 @@ import org.apache.http.client.fluent.Response;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
 
+import cn.aofeng.demo.httpclient.server.SimpleHttpServer;
+
 /**
  * 使用Fluent API快速地进行简单的HTTP的请求和响应处理，启动{@link SimpleHttpServer}作为请求的服务端。
  * 
