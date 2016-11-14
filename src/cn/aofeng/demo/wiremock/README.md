@@ -1,6 +1,6 @@
 使用WireMock实现Http Server Mock作单元测试
 ===
-前一篇文章"[使用jetty实现Http Server Mock作单元测试](http://aofengblog.blog.163.com/blog/static/631702120144581541484/)"
+前一篇文章"[使用jetty实现Http Server Mock作单元测试](http://aofengblog.com/2014/05/06/WireMock-%E5%AE%9E%E7%8E%B0Http-Server-Mock%E7%94%A8%E4%BA%8E%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/)"
 讲了用Jetty实现Http Server Mock来模拟依赖的外部HTTP服务系统，但如果需要更多的功能，如：区分GET和POST；匹配请求的URL；匹配Http Header；匹配请求内容等等。
 实际研发的过程中这些功能都有可能会用到，如果还是用Jetty来实现，需要自己不停地动手去添砖加瓦，虽然有成就感，但在快速迭代的节奏下不一定有足够的时间去做这些。
 这时我们需要一个现成的类库来满足我们这些需求，WireMock和MockServer都可以做到，这里只讲WireMock。
