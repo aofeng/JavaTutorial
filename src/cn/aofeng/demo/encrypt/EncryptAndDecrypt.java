@@ -20,7 +20,7 @@ import javax.crypto.spec.SecretKeySpec;
  */
 public class EncryptAndDecrypt {
 
-    private final static String CHARSET = "utf8";
+    public final static String CHARSET = "utf8";
 
     /**
      * 创建安全密钥。
@@ -46,8 +46,8 @@ public class EncryptAndDecrypt {
      * 
      * @param encryptType 加密方式，如：AES，Blowfish。详情查看<a href="https://docs.oracle.com/javase/7/docs/technotes/guides/security/StandardNames.html#Cipher">Java Cryptography Architecture Standard Algorithm Name Documentation</a>
      * @param secretKey 密钥
-     * @param srcData 待加密的数据
-     * @return 数据加密后的字节数组
+     * @param srcData 待加密的源数据
+     * @return 加密后的二进制数据（字节数组）
      * @see #encrypt(String, SecretKey, String, String)
      */
     public byte[] encrypt(String encryptType, SecretKey secretKey,
@@ -58,6 +58,15 @@ public class EncryptAndDecrypt {
         return encrypt(encryptType, secretKey, srcData, null);
     }
 
+    /**
+     * 加密数据。
+     * 
+     * @param encryptType 加密类型，如：AES/CBC/PKCS5Padding
+     * @param secretKey 密钥
+     * @param srcData 待加密的源数据
+     * @param algorithmParam 某些加密算法的附加参数
+     * @return 加密后的二进制数据（字节数组）
+     */
     public byte[] encrypt(String encryptType, SecretKey secretKey,
             String srcData, String algorithmParam) throws InvalidKeyException,
             IllegalBlockSizeException, BadPaddingException,

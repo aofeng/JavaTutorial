@@ -111,6 +111,7 @@
 * [Blowfish加密与解密](src/cn/aofeng/demo/encrypt/Blowfish.java)
 * [AES加密与解密](src/cn/aofeng/demo/encrypt/AES.java)
 * [Blowfish, AES性能比较](src/cn/aofeng/demo/encrypt/PerformanceCompare.java)
+* [HMAC-SHA1签名算法](src/cn/aofeng/demo/encrypt/HmacSha1.java)
 
 #Java企业开发
 ##开源框架
