@@ -35,16 +35,11 @@ public class MultiScriptEngineCompare {
     public ExecuteResult parse(String scriptEngineName, String script, int count, 
             Map<String, Object> vars) throws ScriptException {
         ScriptEngine scriptEngine = getScriptEngine(scriptEngineName);
-//        log("脚本引擎：%s", );
-//        log("脚本：%s", script);
-//        log("脚本绑定参数：%s", vars);
         long startTime = System.currentTimeMillis();
         for (int i = 0; i < count; i++) {
             runSingleScript(script, vars, scriptEngine);
         }
         long usedTime = System.currentTimeMillis() - startTime;
-//        log("解释执行脚本%d次，消耗%d毫秒。", count, usedTime);
-//        log("");
         
         ExecuteResult result = new ExecuteResult();
         result.setEngine(scriptEngine.getFactory().getEngineName());
@@ -70,9 +65,6 @@ public class MultiScriptEngineCompare {
     public ExecuteResult compile(String scriptEngineName, String script, int count, 
             Map<String, Object> vars) throws ScriptException {
         ScriptEngine scriptEngine = getScriptEngine(scriptEngineName);
-//        log("脚本引擎：%s", scriptEngine.getFactory().getEngineName());
-//        log("脚本：%s", script);
-//        log("脚本绑定参数：%s", vars);
         Compilable compileEngine = (Compilable) scriptEngine;
         CompiledScript compileScript = compileEngine.compile(script);
         long startTime = System.currentTimeMillis();
@@ -80,8 +72,6 @@ public class MultiScriptEngineCompare {
             runSingleScript(compileScript, vars, scriptEngine);
         }
         long usedTime = System.currentTimeMillis() - startTime;
-//        log("预编译脚本后执行%d次消耗%d毫秒", count, usedTime);
-//        log("");
         
         ExecuteResult result = new ExecuteResult();
         result.setEngine(scriptEngine.getFactory().getEngineName());
