@@ -61,6 +61,7 @@
 * [单元测试 - JUnit+Ant+Cobertura生成单元测试代码覆盖率 | How to Generate Code Coverage Report With Junit And Cobertura](http://aofengblog.com/2013/02/27/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95-JUnit-Ant-Cobertura%E7%94%9F%E6%88%90%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E8%A6%86%E7%9B%96%E7%8E%87/)
 * [使用Jetty实现Http Server Mock作单元测试](src/cn/aofeng/demo/jetty)
 * [使用WireMock实现Http Server Mock作单元测试](src/cn/aofeng/demo/wiremock)
+* [使用Mockito作单元测试](src/cn/aofeng/demo/mockito)
 
 ##其他
 ###代码
@@ -102,6 +103,7 @@
 ## 脚本语言
 ###代码
 * [在Java中执行JavaScript脚本](src/cn/aofeng/demo/script/ScriptRunPerformence.java)
+* [多个脚本引擎执行JavaScript的性能比较](src/cn/aofeng/demo/script/MultiScriptEngineCompare.java)
 
 ###文章
 * [在JVM中编译脚本提升运行性能](http://aofengblog.com/2013/12/12/%E5%9C%A8JVM%E4%B8%AD%E7%BC%96%E8%AF%91%E8%84%9A%E6%9C%AC%E6%8F%90%E5%8D%87%E6%80%A7%E8%83%BD/)
@@ -133,9 +135,6 @@
 ##Tomcat
 ###文章
 * [JMX管理Tomcat/Resin](http://aofengblog.blog.163.com/blog/static/6317021200871711013857/)
-
-##Jetty
-* []()
 
 ##JBoss
 ###文章
