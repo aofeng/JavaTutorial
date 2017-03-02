@@ -52,11 +52,11 @@ public class UserServiceTest {
     public void testBuy() {
         long userId = 12345;
         UserDao daoMock = mock(UserDao.class);
-        when(daoMock.queryById(userId)).thenReturn(new User(userId, "张三", 19));
+        when(daoMock.queryById(anyLong())).thenReturn(new User(userId, "张三", 19));
         
         String commodityId = "S01A10009823";
         CommodityDao commodityDao = mock(CommodityDao.class);
-        when(commodityDao.queryById(commodityId)).thenReturn(new Commodity(commodityId, "xxx手机", 1));
+        when(commodityDao.queryById(anyString())).thenReturn(new Commodity(commodityId, "xxx手机", 1));
         
         _userService.setUserDao(daoMock);
         _userService.setCommodityDao(commodityDao);
