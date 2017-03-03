@@ -127,6 +127,10 @@
 * [Spring IBatis Struts2 集成之一：Spring与IBatis集成 | Spring IBatis Struts2 Integration I: Spring Integrates with IBatis](http://aofengblog.com/2011/03/19/Spring-IBatis-Struts2-%E9%9B%86%E6%88%90%E4%B9%8B%E4%B8%80%EF%BC%9ASpring%E4%B8%8EIBatis%E9%9B%86%E6%88%90/)
 * [Spring IBatis Struts2 集成之二：Spring与Struts2集成 | Spring IBatis Struts2 Integration II: Spring Integrates with Struts2](http://aofengblog.com/2011/03/22/Spring-IBatis-Struts2-%E9%9B%86%E6%88%90%E4%B9%8B%E4%BA%8C%EF%BC%9ASpring%E4%B8%8EStruts2%E9%9B%86%E6%88%90/)
 
+## JDBC
+### 代码
+* [JDBC元数据使用示例](src/cn/aofeng/demo/jdbc/MetaDataExample.java)
+
 ##XML
 ###代码
 * [XPath](src/cn/aofeng/demo/xml/XPathDemo.java)
