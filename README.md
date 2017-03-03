@@ -44,6 +44,10 @@
 * [Gson教程-自定义序列化](http://aofengblog.com/2015/08/14/Gson-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%8F%E5%88%97%E5%8C%96/)
 * [Gson教程-自定义反序列化](http://aofengblog.com/2015/08/17/Gson-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/)
 
+## 数据结构
+### 代码
+* [在控制台输出类似目录树的结构](src/cn/aofeng/demo/tree)
+
 ##定时器
 ###代码
 * [Timer](src/cn/aofeng/demo/java/util/timer/TimerDemo.java)
