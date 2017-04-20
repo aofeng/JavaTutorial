@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <commentGenerator>
+        <!-- 指定是否自动生成注释 true：不生成, false：生成 -->
+        <property name="suppressAllComments" value="true"/>
+        <!-- 是否用表和列的注释生成实体类和字段的注释。注：如果suppressAllComments设置为true，则忽略此配置选项 -->
+        <property name="addRemarkComments" value="true"/>
+    </commentGenerator>
+    
+    <jdbcConnection connectionURL="jdbc:mysql://192.168.56.102:19816/ucgc_monit?useUnicode=true&amp;characterEncoding=UTF8" 
+        driverClass="com.mysql.jdbc.Driver" 
+        userId="uzone" 
+        password="uzone">
+    </jdbcConnection>
+    
+    <!-- 存放实体类的package -->
+    <javaModelGenerator targetPackage="cn.aofeng.demo.mybatis.entity" 
+        targetProject="JavaTutorial/src" />
+    <!-- 存放SQL语句和结构映射配置文件的package -->
+    <sqlMapGenerator targetPackage="cn.aofeng.demo.mybatis.mapper" 
+        targetProject="JavaTutorial/src" />
+    <!-- 存放DAO类的package -->
+    <javaClientGenerator targetPackage="cn.aofeng.demo.mybatis.dao" 
+        targetProject="JavaTutorial/src" type="XMLMAPPER" />
+    
+    <table schema="ucgc_monit" tableName="monit_contact" 
+        modelType="flat" 
+        enableCountByExample="false" 
+        enableDeleteByExample="false" 
+        enableSelectByExample="false" 
+        enableUpdateByExample="false"></table>
+    <table schema="ucgc_monit" tableName="monit_item"
+        modelType="flat" 
+        enableCountByExample="false" 
+        enableDeleteByExample="false" 
+        enableSelectByExample="false" 
+        enableUpdateByExample="false"></table>
+    <table schema="ucgc_monit" tableName="monit_notify_history"
+        modelType="flat" 
+        enableCountByExample="false" 
+        enableDeleteByExample="false" 
+        enableSelectByExample="false" 
+        enableUpdateByExample="false"></table>
+    <table schema="ucgc_monit" tableName="monit_notify_item"
+        modelType="flat" 
+        enableCountByExample="false" 
+        enableDeleteByExample="false" 
+        enableSelectByExample="false" 
+        enableUpdateByExample="false"></table>
+    <table schema="ucgc_monit" tableName="monit_stat"
+        modelType="flat" 
+        enableCountByExample="false" 
+        enableDeleteByExample="false" 
+        enableSelectByExample="false" 
+        enableUpdateByExample="false"></table>
+    <table schema="ucgc_monit" tableName="monit_threshold"
+        modelType="flat" 
+        enableCountByExample="false" 
+        enableDeleteByExample="false" 
+        enableSelectByExample="false" 
+        enableUpdateByExample="false"></table>
+  </context>
+</generatorConfiguration>

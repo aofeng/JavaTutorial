@@ -13,6 +13,7 @@
 ## 数据库
 * [Apache DbUtils - JDBC Utility Component](src/cn/aofeng/demo/dbutils)
 * [JDBC元数据使用示例](src/cn/aofeng/demo/jdbc/MetaDataExample.java)
+* [MyBatis3使用示例](src/cn/aofeng/demo/mybatis)
 
 ## XML
 * [XPath](src/cn/aofeng/demo/xml/XPathDemo.java)
