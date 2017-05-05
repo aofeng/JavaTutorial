@@ -59,6 +59,11 @@
 * [Java网络处理模型-阻塞I/O+线程池](http://aofengblog.com/2013/10/24/Java%E7%BD%91%E7%BB%9C%E5%A4%84%E7%90%86%E6%A8%A1%E5%9E%8B-%E9%98%BB%E5%A1%9EI-O-%E7%BA%BF%E7%A8%8B%E6%B1%A0/)
 * [Reactor模式与非阻塞I/O | Reactor Pattern and NIO](http://aofengblog.com/2013/11/04/Reactor%E6%A8%A1%E5%BC%8F%E4%B8%8E%E9%9D%9E%E9%98%BB%E5%A1%9EI-O/)
 
+### HTTP
+* [使用Fluent API发起HTTP请求（Get和Post）](src/cn/aofeng/demo/httpclient/FluentApi.java)
+* [使用HttpClient发起HTTP请求（Get, Post和上传文件）](src/cn/aofeng/demo/httpclient/FluentApi.java)
+* [使用JDK中的API建立简单的HTTP Server](src/cn/aofeng/demo/httpclient/SimpleHttpServer.java)
+
 ### Netty 4.0.x
 * [EchoServer](src/cn/aofeng/demo/netty40x/echo/EchoServer.java)
 * [EchoClient](src/cn/aofeng/demo/netty40x/echo/EchoClient.java)
@@ -73,7 +78,7 @@
 * [事件驱动的异步化框架:event4j](http://aofengblog.blog.163.com/blog/static/63170212014102463624267/)
 * [JDK HashMap源码分析 | HashMap Source Code Analysis](http://aofengblog.com/2014/08/14/JDK-HashMap%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/)
 
-##反射
+## 反射
 * [获取构造方法、普通方法、字段和注解](src/cn/aofeng/demo/java/lang/reflect/ClassAnalyze.java)
 * [使用构造方法创建对象实例](src/cn/aofeng/demo/java/lang/reflect/CreateInstance.java)
 * [调用方法](src/cn/aofeng/demo/java/lang/reflect/InvokeMethod.java)
@@ -101,7 +106,7 @@
 * [Spring IBatis Struts2 集成之二：Spring与Struts2集成 | Spring IBatis Struts2 Integration II: Spring Integrates with Struts2](http://aofengblog.com/2011/03/22/Spring-IBatis-Struts2-%E9%9B%86%E6%88%90%E4%B9%8B%E4%BA%8C%EF%BC%9ASpring%E4%B8%8EStruts2%E9%9B%86%E6%88%90/)
 
 ### Tomcat
-* [JMX管理Tomcat/Resin](http://aofengblog.blog.163.com/blog/static/6317021200871711013857/)
+* [JMX管理Tomcat/Resin](http://aofengblog.com/2008/08/17/Tomcat-JMX%E7%AE%A1%E7%90%86Tomcat-Resin/)
 
 ### JBoss
 * [JBoss5.1.0 GA - 部署项目类库兼容和类库冲突问题解决方法](http://aofengblog.blog.163.com/blog/static/631702120113674626533/)
