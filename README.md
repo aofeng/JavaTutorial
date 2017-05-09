@@ -46,7 +46,7 @@
 * [使用Mockito作单元测试](src/cn/aofeng/demo/mockito)
 
 
-## 网络与I/O
+## 网络＆I/O
 * [多线程网络echo服务](src/cn/aofeng/demo/io/MultiThreadEchoServer.java)
 * [线程池网络echo服务](src/cn/aofeng/demo/io/ThreadPoolEchoServer.java)
 * [NIO 缓冲区](src/cn/aofeng/demo/nio/BufferIO.java)
@@ -62,14 +62,14 @@
 ### HTTP
 * [使用Fluent API发起HTTP请求（Get和Post）](src/cn/aofeng/demo/httpclient/FluentApi.java)
 * [使用HttpClient发起HTTP请求（Get, Post和上传文件）](src/cn/aofeng/demo/httpclient/FluentApi.java)
-* [使用JDK中的API建立简单的HTTP Server](src/cn/aofeng/demo/httpclient/SimpleHttpServer.java)
+* [使用JDK中的API建立简单的HTTP Server](src/cn/aofeng/demo/httpclient/server/SimpleHttpServer.java)
 
 ### Netty 4.0.x
 * [EchoServer](src/cn/aofeng/demo/netty40x/echo/EchoServer.java)
 * [EchoClient](src/cn/aofeng/demo/netty40x/echo/EchoClient.java)
 
 
-## 线程与并发
+## 线程＆并发
 * [fork/join](src/cn/aofeng/demo/java/util/forkjoin/HelloForkJoin.java)
 * [Future](src/cn/aofeng/demo/java/util/future/HelloFuture.java)
 * [Future接口关系图](src/cn/aofeng/demo/java/util/future/Future.ucls)
@@ -78,11 +78,12 @@
 * [事件驱动的异步化框架:event4j](http://aofengblog.blog.163.com/blog/static/63170212014102463624267/)
 * [JDK HashMap源码分析 | HashMap Source Code Analysis](http://aofengblog.com/2014/08/14/JDK-HashMap%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/)
 
-## 反射
+## 反射＆代理
 * [获取构造方法、普通方法、字段和注解](src/cn/aofeng/demo/java/lang/reflect/ClassAnalyze.java)
 * [使用构造方法创建对象实例](src/cn/aofeng/demo/java/lang/reflect/CreateInstance.java)
 * [调用方法](src/cn/aofeng/demo/java/lang/reflect/InvokeMethod.java)
 * [获取/设置字段值](src/cn/aofeng/demo/java/lang/reflect/InvokeField.java)
+* [静态代理＆动态代理](src/cn/aofeng/demo/proxy/AccountServiceClient.java)
 
 ## 脚本语言
 * [在Java中执行JavaScript脚本](src/cn/aofeng/demo/script/ScriptRunPerformence.java)
