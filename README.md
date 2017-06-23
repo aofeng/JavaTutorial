@@ -3,6 +3,9 @@
 
 在这里，通过文章和代码，把这些知识点和技术的主要内容记录并汇总，供自己快速回顾，也分享给他人。
 
+## 关键字
+* [transient与序列化](src/cn/aofeng/demo/java/lang/TransientDemo.java)
+
 ## 数据结构
 * [在控制台输出类似目录树的结构](src/cn/aofeng/demo/tree)
 
