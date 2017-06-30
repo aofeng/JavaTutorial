@@ -62,6 +62,9 @@
 * [Java网络处理模型-阻塞I/O+线程池](http://aofengblog.com/2013/10/24/Java%E7%BD%91%E7%BB%9C%E5%A4%84%E7%90%86%E6%A8%A1%E5%9E%8B-%E9%98%BB%E5%A1%9EI-O-%E7%BA%BF%E7%A8%8B%E6%B1%A0/)
 * [Reactor模式与非阻塞I/O | Reactor Pattern and NIO](http://aofengblog.com/2013/11/04/Reactor%E6%A8%A1%E5%BC%8F%E4%B8%8E%E9%9D%9E%E9%98%BB%E5%A1%9EI-O/)
 
+### RMI
+* [RMI服务端与客户端示例](src/cn/aofeng/demo/java/rmi)
+
 ### HTTP
 * [使用Fluent API发起HTTP请求（Get和Post）](src/cn/aofeng/demo/httpclient/FluentApi.java)
 * [使用HttpClient发起HTTP请求（Get, Post和上传文件）](src/cn/aofeng/demo/httpclient/FluentApi.java)
