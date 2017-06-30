@@ -1,6 +1,5 @@
 package cn.aofeng.demo.java.rmi;
 
-import java.net.MalformedURLException;
 import java.rmi.AlreadyBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
@@ -31,8 +30,9 @@ public class RmiServer {
     
     /**
      * @param args [0]:绑定端口
+     * @throws RemoteException 
      */
-    public static void main(String[] args) throws RemoteException, MalformedURLException, AlreadyBoundException {
+    public static void main(String[] args) throws RemoteException {
         int port = Integer.parseInt(args[0]);
         UserService userService = new UserServiceImpl();
         Registry registry = createRegistry(port);
