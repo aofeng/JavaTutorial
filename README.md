@@ -67,7 +67,7 @@
 
 ### HTTP
 * [使用Fluent API发起HTTP请求（Get和Post）](src/cn/aofeng/demo/httpclient/FluentApi.java)
-* [使用HttpClient发起HTTP请求（Get, Post和上传文件）](src/cn/aofeng/demo/httpclient/FluentApi.java)
+* [使用HttpClient发起HTTP请求（Get, Post和上传文件）](src/cn/aofeng/demo/httpclient/HttpClientBasic.java)
 * [使用JDK中的API建立简单的HTTP Server](src/cn/aofeng/demo/httpclient/server/SimpleHttpServer.java)
 
 ### Netty 4.0.x
