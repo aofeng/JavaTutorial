@@ -91,6 +91,9 @@
 * [获取/设置字段值](src/cn/aofeng/demo/java/lang/reflect/InvokeField.java)
 * [静态代理＆动态代理](src/cn/aofeng/demo/proxy/AccountServiceClient.java)
 
+## AOP
+* [AspectJ-编译时织入和加载类时织入](src/cn/aofeng/demo/aspectj)
+
 ## 脚本语言
 * [在Java中执行JavaScript脚本](src/cn/aofeng/demo/script/ScriptRunPerformence.java)
 * [多个脚本引擎执行JavaScript的性能比较](src/cn/aofeng/demo/script/MultiScriptEngineCompare.java)

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<aspectj>
+
+    <!-- 拦截器定义 -->
+	<aspects>
+		<aspect name="cn.aofeng.demo.aspectj.BusinessServiceInterceptor" />
+	</aspects>
+
+    <!-- 需要被织入功能的类定义 -->
+	<weaver>
+		<include within="cn.aofeng.demo.aspectj.*" />
+	</weaver>
+
+</aspectj>
