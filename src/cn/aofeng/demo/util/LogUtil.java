@@ -7,8 +7,12 @@ package cn.aofeng.demo.util;
  */
 public class LogUtil {
 
+    public static void log(String msg) {
+        System.out.println(msg);
+    }
+    
     public static void log(String msg, Object... param) {
-        System.out.println( String.format(msg, param) );
+        log( String.format(msg, param) );
     }
 
 }

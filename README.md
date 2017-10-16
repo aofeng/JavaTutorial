@@ -93,6 +93,7 @@
 
 ## AOP
 * [AspectJ-编译时织入和加载类时织入](src/cn/aofeng/demo/aspectj)
+* [Instrumentation入门](src/cn/aofeng/demo/java/lang/instrument)
 
 ## 脚本语言
 * [在Java中执行JavaScript脚本](src/cn/aofeng/demo/script/ScriptRunPerformence.java)
