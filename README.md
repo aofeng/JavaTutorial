@@ -3,6 +3,8 @@
 
 在这里，通过文章和代码，把这些知识点和技术的主要内容记录并汇总，供自己快速回顾，也分享给他人。
 
+注：部分例子基于JDK8。
+
 ## 关键字
 * [transient与序列化](src/cn/aofeng/demo/java/lang/serialization/TransientDemo.java)
 
@@ -107,6 +109,10 @@
 * [HMAC-SHA1签名算法](src/cn/aofeng/demo/encrypt/HmacSha1.java)
 
 ## 开源组件
+
+### Slf4j
+* [slf4j使用示例](src/cn/aofeng/demo/slf4j/HelloSlf4j.java)
+
 ### Redis
 * [Redis客户端Jedis使用示例](src/cn/aofeng/demo/redis/JedisDemo.java)
 
