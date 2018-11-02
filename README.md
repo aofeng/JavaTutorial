@@ -78,6 +78,7 @@
 
 
 ## 线程＆并发
+* [守护线程](src/cn/aofeng/demo/thread/DaemonThreadDemo.java)
 * [fork/join](src/cn/aofeng/demo/java/util/forkjoin/HelloForkJoin.java)
 * [Future](src/cn/aofeng/demo/java/util/future/HelloFuture.java)
 * [Future接口关系图](src/cn/aofeng/demo/java/util/future/Future.ucls)
